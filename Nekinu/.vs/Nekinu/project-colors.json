@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e741d89c-04d3-4b85-abd9-194a13b7e3f5": {
+      "ProjectGuid": "e741d89c-04d3-4b85-abd9-194a13b7e3f5",
+      "DisplayName": "Nekinu",
+      "ColorIndex": 0
+    },
+    "23fb6e22-c0fc-4cf9-9dc6-8d831d78ffe4": {
+      "ProjectGuid": "23fb6e22-c0fc-4cf9-9dc6-8d831d78ffe4",
+      "DisplayName": "Nekinu_Editor",
+      "ColorIndex": 1
+    },
+    "59210f82-275b-4627-97c5-bdf9c8ef23dd": {
+      "ProjectGuid": "59210f82-275b-4627-97c5-bdf9c8ef23dd",
+      "DisplayName": "FileBrowser",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

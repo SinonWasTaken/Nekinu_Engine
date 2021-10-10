@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nekinu", "Nekinu.csproj", "{E741D89C-04D3-4B85-ABD9-194A13B7E3F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileBrowser", "..\FileBrowser\FileBrowser.csproj", "{74A51706-4C4E-4120-A26C-E0B4DA5C3C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "..\Nekinu Launcher\Launcher\Launcher\Launcher.csproj", "{EAE68574-B075-4D1A-B5B7-B7B17FC42450}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nekinu_Editor", "..\NekinuEditor\Nekinu_Editor\Nekinu_Editor.csproj", "{23FB6E22-C0FC-4CF9-9DC6-8D831D78FFE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E741D89C-04D3-4B85-ABD9-194A13B7E3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E741D89C-04D3-4B85-ABD9-194A13B7E3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E741D89C-04D3-4B85-ABD9-194A13B7E3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E741D89C-04D3-4B85-ABD9-194A13B7E3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A51706-4C4E-4120-A26C-E0B4DA5C3C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A51706-4C4E-4120-A26C-E0B4DA5C3C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A51706-4C4E-4120-A26C-E0B4DA5C3C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A51706-4C4E-4120-A26C-E0B4DA5C3C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE68574-B075-4D1A-B5B7-B7B17FC42450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE68574-B075-4D1A-B5B7-B7B17FC42450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE68574-B075-4D1A-B5B7-B7B17FC42450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE68574-B075-4D1A-B5B7-B7B17FC42450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23FB6E22-C0FC-4CF9-9DC6-8D831D78FFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FB6E22-C0FC-4CF9-9DC6-8D831D78FFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FB6E22-C0FC-4CF9-9DC6-8D831D78FFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FB6E22-C0FC-4CF9-9DC6-8D831D78FFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EB9D389-452B-4044-B585-8685CDF59E61}
+	EndGlobalSection
+EndGlobal

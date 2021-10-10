@@ -1,0 +1,14 @@
+﻿float fresnelFactor(vec3 vertexPosition, vec3 lightPosition, float fresnelFactor, float fresnelPower)
+{
+	vec3 eye = normalize(-vertexPosition.xyz);
+
+	vec3 light = normal(lightPosition.xyz - vertexPosition.xyz);
+	vec3 halfway = normalize(light + eye);
+
+	float fresnel = dot(halfway, eye);
+	fresnel = max(fresnelFactor, 0.0);
+	fresnel = 1.0 - fresnelFactor;
+	fresnel = pow(fresnelFactor, fresnelPower);
+
+	return fresnel;
+}

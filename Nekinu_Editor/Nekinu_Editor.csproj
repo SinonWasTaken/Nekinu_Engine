@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0-windows</TargetFramework>
+        <AssemblyName>Nekinu_Editor</AssemblyName>
+        <RootNamespace>Nekinu_Editor</RootNamespace>
+        <ApplicationIcon />
+        <OutputType>WinExe</OutputType>
+        <StartupObject />
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Nekinu\Nekinu.csproj" />
+    </ItemGroup>
+
+</Project>

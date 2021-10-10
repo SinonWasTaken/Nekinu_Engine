@@ -1,0 +1,10 @@
+C:\Users\Sinon\Desktop\Test\Test\bin\Debug\netstandard2.0\Resources\ShaderFiles\VertexShader.txt
+C:\Users\Sinon\Desktop\Test\Test\bin\Debug\netstandard2.0\Engine.deps.json
+C:\Users\Sinon\Desktop\Test\Test\bin\Debug\netstandard2.0\Engine.dll
+C:\Users\Sinon\Desktop\Test\Test\bin\Debug\netstandard2.0\Engine.pdb
+C:\Users\Sinon\Desktop\Test\Test\obj\Debug\netstandard2.0\Test.csprojAssemblyReference.cache
+C:\Users\Sinon\Desktop\Test\Test\obj\Debug\netstandard2.0\Test.AssemblyInfoInputs.cache
+C:\Users\Sinon\Desktop\Test\Test\obj\Debug\netstandard2.0\Test.AssemblyInfo.cs
+C:\Users\Sinon\Desktop\Test\Test\obj\Debug\netstandard2.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Sinon\Desktop\Test\Test\obj\Debug\netstandard2.0\Engine.dll
+C:\Users\Sinon\Desktop\Test\Test\obj\Debug\netstandard2.0\Engine.pdb

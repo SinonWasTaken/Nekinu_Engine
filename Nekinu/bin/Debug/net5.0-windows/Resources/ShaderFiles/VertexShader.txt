@@ -1,0 +1,26 @@
+﻿#version 400 core
+
+in vec3 position;
+in vec2 textureCords;
+in vec3 normals;
+
+out vec3 passPosition;
+out vec2 passCords;
+out vec3 toNormal;
+
+uniform mat4 projection;
+uniform mat4 view;
+uniform mat4 entity;
+
+void main(void)
+{
+	mat4 transformation = entity * view * projection;
+
+	passPosition = position;
+
+	passCords = textureCords;
+
+	toNormal = normalize(normals);
+
+	gl_Position = vec4(position, 1.0) * transformation;
+}

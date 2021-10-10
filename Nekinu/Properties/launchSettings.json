@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Nekinu": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\Nekinu\\bin\\Debug\\netcoreapp3.1\\Engine.exe"
+    }
+  }
+}

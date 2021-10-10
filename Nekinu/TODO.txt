@@ -1,0 +1,15 @@
+﻿7/15/21
+The editor copies the scene, and can reload it with no issues, as of now.
+	Now all I need to do is use the UpdateInEditor attribute to update specific methods or properties while in the editor
+
+7/16 Have to rework the forward method. It works for the most part, until I look left or right.
+
+7/22 UI Plans.
+	I don't think I should be able to attach UI components to regular entities. Since UI is screen space (Unless your using 3D UI), the way it transforms across the screen
+		is different. (0,0,0) is always the center of the screen, no matter how I move a 3D camera in the scene, and I believe the sides of the screen are (1, 1) and (-1, -1).
+
+	-UI Entity- The same thing as a normal entity, except it can only interact with UI elements/components.
+	-UI Transform- all vectors in this transform are Vector2. There is no Z axis for a 2D screen afterall
+	-UI Renderer- Example -Screen size is (1360, 768)- half of that is -(680, 384) == (0, 0) screen space-
+		(Transform.X = 400 Transform.Y = 122) 1080 / 1360 = 0.7941176470588235... 506 / 768 = 0.6588541666666667
+		UI Will be renderer at (0.7941176470588235, 0.6588541666666667) on screen
