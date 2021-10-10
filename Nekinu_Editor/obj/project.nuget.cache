@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gRMkq9+YzgzfiFX+phGkekDsnmtdvuWbAgkxzLq+Y8MfAUKWwz26uynuNcE3Ynv680dGtTbUj1aCmh/i4Zpoxg==",
+  "dgSpecHash": "6+XeoC+sbJ3IBRWY3KcKQNnR818bj8k9S52PnsE6GLY/Yg0zikTs/EaNM6DDbfmHH6Dp4Te+Ci9l4Q5o9AaZ4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu_Editor\\Nekinu_Editor.csproj",
   "expectedPackageFiles": [
@@ -59,7 +59,6 @@
     "C:\\Users\\Seth\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Seth\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Seth\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
-    "C:\\Users\\Seth\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Seth\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\Seth\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Seth\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",

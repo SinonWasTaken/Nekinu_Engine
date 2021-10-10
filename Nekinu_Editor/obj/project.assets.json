@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {
+    "net6.0-windows7.0": {
       "AssimpNet/5.0.0-beta1": {
         "type": "package",
         "dependencies": {
@@ -99,16 +99,16 @@
       "Microsoft.Win32.SystemEvents/6.0.0-rc.1.21451.13": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {}
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {}
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -605,20 +605,20 @@
           "Microsoft.Win32.SystemEvents": "6.0.0-rc.1.21451.13"
         },
         "compile": {
-          "lib/netcoreapp3.1/System.Drawing.Common.dll": {}
+          "lib/net6.0/System.Drawing.Common.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/System.Drawing.Common.dll": {}
+          "lib/net6.0/System.Drawing.Common.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll": {
+          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll": {
+          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -807,15 +807,6 @@
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
-        }
-      },
-      "System.Memory/4.5.4": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Net.Http/4.3.0": {
@@ -1009,14 +1000,11 @@
       },
       "System.Resources.Extensions/6.0.0-rc.1.21451.13": {
         "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.4"
-        },
         "compile": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
+          "lib/net6.0/System.Resources.Extensions.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
+          "lib/net6.0/System.Resources.Extensions.dll": {}
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1485,7 +1473,7 @@
       },
       "Engine/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AssimpNet": "5.0.0-beta1",
           "FileBrowser": "1.0.0",
@@ -1504,7 +1492,7 @@
       },
       "FileBrowser/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/FileBrowser.dll": {}
         },
@@ -3184,29 +3172,6 @@
         "runtimes/aot/lib/netcore50/System.Linq.Expressions.dll",
         "system.linq.expressions.4.3.0.nupkg.sha512",
         "system.linq.expressions.nuspec"
-      ]
-    },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
-      "type": "package",
-      "path": "system.memory/4.5.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Memory.dll",
-        "lib/net461/System.Memory.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -5233,7 +5198,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": [
+    "net6.0-windows7.0": [
       "Engine >= 1.0.0"
     ]
   },
@@ -5254,15 +5219,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows7.0",
           "projectReferences": {
             "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj": {
               "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj"
@@ -5277,8 +5242,8 @@
       }
     },
     "frameworks": {
-      "net5.0-windows7.0": {
-        "targetAlias": "net5.0-windows",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows7.0",
         "imports": [
           "net461",
           "net462",

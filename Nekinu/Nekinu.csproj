@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <AssemblyName>Engine</AssemblyName>
     <RootNamespace>Engine</RootNamespace>
     <Nullable>warnings</Nullable>
@@ -36,10 +36,19 @@
     <None Update="Resources\Font\font.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\Images\Folder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Images\Icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\Images\Item.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Models\Cube.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Models\Frag_Grenade.fbx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Models\Rancour.txt">

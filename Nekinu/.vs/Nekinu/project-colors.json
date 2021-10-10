@@ -30,7 +30,17 @@
       "ProjectGuid": "2802302e-3528-4799-be4a-97dc58ef090f",
       "DisplayName": "FileBrowser",
       "ColorIndex": 4
+    },
+    "909d8b6d-6e97-40ba-9a99-1d7cd19e2e80": {
+      "ProjectGuid": "909d8b6d-6e97-40ba-9a99-1d7cd19e2e80",
+      "DisplayName": "Nekinu_Editor",
+      "ColorIndex": 5
+    },
+    "5a86c865-38f9-496c-96b6-daa8408759ae": {
+      "ProjectGuid": "5a86c865-38f9-496c-96b6-daa8408759ae",
+      "DisplayName": "FileBrowser",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 7
 }

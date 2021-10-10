@@ -1,0 +1,99 @@
+﻿#version 400 core
+
+in vec3 passPosition;
+in vec2 passCords;
+in vec3 toNormal;
+
+uniform vec3 sunPosition;
+uniform vec3 sunColor;
+uniform float sunIntensity;
+
+uniform vec3[4] lightPosition;
+uniform vec3[4] lightColor;
+uniform vec3[4] lightAttenuation;
+uniform float[4] lightIntensity;
+
+uniform sampler2D textureSample;
+
+out vec4 color;
+
+bool isPointVisible(vec4 point, mat4 vp);
+vec3 calculateAdditionalLight(vec3 objPos, vec3 position, vec3 color, vec3 atten, float intensity);
+vec3 calculateSun(vec3 objPos, vec3 position, vec3 color, float intensity);
+vec4 defineColor(vec4 color);
+vec4 TransformRow(vec4 a, mat4 b);
+
+void main(void)
+{
+	vec4 textureColor = texture2D(textureSample, passCords);
+
+	vec4 Color;
+	vec4 textColor;
+
+	vec3 totalDiffuse = vec3(0);
+
+	/*//totalDiffuse += calculateSun(passPosition, sunPosition, sunColor, sunIntensity);
+
+	for(int i =0; i < 4; i++)
+	{
+		totalDiffuse += calculateAdditionalLight(passPosition, lightPosition[i], lightColor[i], lightAttenuation[i], lightIntensity[i]);
+	}*/
+
+	textColor = defineColor(textureColor);
+
+	color = (textColor)/* + vec4(totalDiffuse.xyz, 1)*/;
+}
+
+bool isPointVisible(vec4 point, mat4 VP)
+{
+	vec4 clip = TransformRow(point, VP);
+	if(clip.z <= 0)
+		return false;
+	vec2 UV = vec2(clip.x / clip.w, clip.y / clip.w);
+	if (UV.x <= -0.45 || UV.x >= 0.45 || UV.y <= -0.45 || UV.y >= 0.45)
+		return false;
+    return true;
+}
+
+vec4 TransformRow(vec4 a, mat4 b)
+{
+	return vec4(a.x * b[0][0] + a.y * b[0][1] + a.z * b[0][2] + a.w * b[0][3], a.x * b[1][0] + a.y * b[1][1] + a.z * b[1][2] + a.w * b[1][3], a.x * b[2][0] + a.y * b[2][1] + a.z * b[2][2] + a.w * b[2][3], a.x * b[3][0] + a.y * b[3][1] + a.z * b[3][2] + a.w * b[3][3]);
+}
+
+vec4 defineColor(vec4 color)
+{
+	if(color == vec4(0))
+	{
+		return vec4(1);
+	}
+	else
+	{
+		return color;
+	}
+}
+
+vec3 calculateSun(vec3 objPos, vec3 position, vec3 color, float intensity)
+{
+	vec3 lightDirection = normalize(position);
+
+	vec3 toLight = lightDirection - objPos;
+
+	float distance = length(toLight);
+
+	float attenuation = 1 / (1 + (1 * distance) + (1 * (distance * distance)));
+
+	return attenuation * color * max(dot(toNormal, lightDirection), 0) * intensity;
+}
+
+vec3 calculateAdditionalLight(vec3 objPos, vec3 position, vec3 color, vec3 atten, float intensity)
+{
+	vec3 lightDirection = normalize(position);
+
+	vec3 toLight = lightDirection - objPos;
+
+	float distance = length(toLight);
+
+	float attenuation = 1 / (atten.x + (atten.y * distance) + (atten.z * (distance * distance)));
+
+	return intensity * (attenuation * color * max(dot(toNormal, lightDirection), 0));
+}

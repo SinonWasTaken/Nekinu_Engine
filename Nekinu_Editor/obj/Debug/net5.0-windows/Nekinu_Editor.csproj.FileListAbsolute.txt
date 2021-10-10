@@ -159,7 +159,6 @@ C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\bin\Debug\net5.0-windows\Engin
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\bin\Debug\net5.0-windows\FileBrowser.dll
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\bin\Debug\net5.0-windows\Engine.pdb
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\bin\Debug\net5.0-windows\FileBrowser.pdb
-C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net5.0-windows\Nekinu_Editor.csproj.CopyComplete
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net5.0-windows\Nekinu_Editor.dll
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net5.0-windows\ref\Nekinu_Editor.dll
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net5.0-windows\Nekinu_Editor.pdb
