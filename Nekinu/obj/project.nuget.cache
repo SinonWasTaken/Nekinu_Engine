@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hHr+mZdHKD6ecusYEkzjMOiD7oqHkB/rA5U1Cb3N84uB9OtRHsjycVGNYo0HQaqwrqnDb3LD0GsoMnD+Gw5mDg==",
+  "dgSpecHash": "rpRG9I5O4YIoAYDqE7kQrbyB9PQy087jsGclpKnLhWC3MrlDt+bN+GCKQrEhKLRrjn3ytK0NCx5ALg2FDGFDEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Seth\\Desktop\\NekinuEngine\\Nekinu\\Nekinu.csproj",
+  "projectFilePath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Seth\\.nuget\\packages\\assimpnet\\5.0.0-beta1\\assimpnet.5.0.0-beta1.nupkg.sha512",
     "C:\\Users\\Seth\\.nuget\\packages\\imgui.net\\1.78.0\\imgui.net.1.78.0.nupkg.sha512",

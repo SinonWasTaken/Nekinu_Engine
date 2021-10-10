@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sinon\\Desktop\\Nekinu\\NekinuEditor\\Nekinu_Editor\\Nekinu_Editor.csproj": {}
+    "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu_Editor\\Nekinu_Editor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sinon\\Desktop\\Nekinu\\FileBrowser\\FileBrowser.csproj": {
+    "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sinon\\Desktop\\Nekinu\\FileBrowser\\FileBrowser.csproj",
+        "projectUniqueName": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj",
         "projectName": "FileBrowser",
-        "projectPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\FileBrowser\\FileBrowser.csproj",
-        "packagesPath": "C:\\Users\\Sinon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\FileBrowser\\obj\\",
+        "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj",
+        "packagesPath": "C:\\Users\\Seth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sinon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Seth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows"
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -57,25 +57,25 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sinon\\Desktop\\Nekinu\\NekinuEditor\\Nekinu_Editor\\Nekinu_Editor.csproj": {
+    "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sinon\\Desktop\\Nekinu\\NekinuEditor\\Nekinu_Editor\\Nekinu_Editor.csproj",
-        "projectName": "Nekinu_Editor",
-        "projectPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\NekinuEditor\\Nekinu_Editor\\Nekinu_Editor.csproj",
-        "packagesPath": "C:\\Users\\Sinon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\NekinuEditor\\Nekinu_Editor\\obj\\",
+        "projectUniqueName": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj",
+        "projectName": "Engine",
+        "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj",
+        "packagesPath": "C:\\Users\\Seth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sinon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Seth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows"
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -85,69 +85,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Sinon\\Desktop\\Nekinu\\Nekinu\\Nekinu.csproj": {
-                "projectPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\Nekinu\\Nekinu.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Sinon\\Desktop\\Nekinu\\Nekinu\\Nekinu.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Sinon\\Desktop\\Nekinu\\Nekinu\\Nekinu.csproj",
-        "projectName": "Nekinu",
-        "projectPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\Nekinu\\Nekinu.csproj",
-        "packagesPath": "C:\\Users\\Sinon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\Nekinu\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Sinon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0-windows"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0-windows7.0": {
-            "targetAlias": "net5.0-windows",
-            "projectReferences": {
-              "C:\\Users\\Sinon\\Desktop\\Nekinu\\FileBrowser\\FileBrowser.csproj": {
-                "projectPath": "C:\\Users\\Sinon\\Desktop\\Nekinu\\FileBrowser\\FileBrowser.csproj"
+              "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj": {
+                "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj"
               }
             }
           }
@@ -200,12 +139,67 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu_Editor\\Nekinu_Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu_Editor\\Nekinu_Editor.csproj",
+        "projectName": "Nekinu_Editor",
+        "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu_Editor\\Nekinu_Editor.csproj",
+        "packagesPath": "C:\\Users\\Seth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu_Editor\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Seth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj": {
+                "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
         }
       }
     }

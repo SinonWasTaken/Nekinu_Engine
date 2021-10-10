@@ -13,18 +13,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Seth\\Documents\\GitHub\\FileBrowser\\FileBrowser.csproj",
+      "projectUniqueName": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj",
       "projectName": "FileBrowser",
-      "projectPath": "C:\\Users\\Seth\\Documents\\GitHub\\FileBrowser\\FileBrowser.csproj",
+      "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj",
       "packagesPath": "C:\\Users\\Seth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Seth\\Documents\\GitHub\\FileBrowser\\obj\\",
+      "outputPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Seth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows"
+        "net5.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},

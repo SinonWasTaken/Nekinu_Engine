@@ -15,7 +15,22 @@
       "ProjectGuid": "59210f82-275b-4627-97c5-bdf9c8ef23dd",
       "DisplayName": "FileBrowser",
       "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "0e391018-4b16-4b5e-9745-ea2c30a4b068": {
+      "ProjectGuid": "0e391018-4b16-4b5e-9745-ea2c30a4b068",
+      "DisplayName": "Nekinu_Editor",
+      "ColorIndex": 3
+    },
+    "2802302e-3528-4799-be4a-97dc58ef090f": {
+      "ProjectGuid": "2802302e-3528-4799-be4a-97dc58ef090f",
+      "DisplayName": "FileBrowser",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

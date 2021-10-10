@@ -1482,6 +1482,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "FileBrowser/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FileBrowser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileBrowser.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -5188,11 +5201,17 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "FileBrowser/1.0.0": {
+      "type": "project",
+      "path": "../FileBrowser/FileBrowser.csproj",
+      "msbuildProject": "../FileBrowser/FileBrowser.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "AssimpNet >= 5.0.0-beta1",
+      "FileBrowser >= 1.0.0",
       "ImGui.NET >= 1.78.0",
       "Newtonsoft.Json >= 13.0.1",
       "OpenTK >= 4.6.7",
@@ -5206,18 +5225,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Seth\\Desktop\\NekinuEngine\\Nekinu\\Nekinu.csproj",
+      "projectUniqueName": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj",
       "projectName": "Engine",
-      "projectPath": "C:\\Users\\Seth\\Desktop\\NekinuEngine\\Nekinu\\Nekinu.csproj",
+      "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\Nekinu.csproj",
       "packagesPath": "C:\\Users\\Seth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Seth\\Desktop\\NekinuEngine\\Nekinu\\obj\\",
+      "outputPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\Nekinu\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Seth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows"
+        "net5.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -5226,7 +5245,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj": {
+              "projectPath": "C:\\Users\\Seth\\Desktop\\Nekinu_Engine\\FileBrowser\\FileBrowser.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Nekinu_Editor/1.0.0": {
         "dependencies": {
-          "Nekinu": "1.0.0"
+          "Engine": "1.0.0"
         },
         "runtime": {
           "Nekinu_Editor.dll": {}
@@ -937,12 +937,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "FileBrowser/1.0.0": {
-        "runtime": {
-          "FileBrowser.dll": {}
-        }
-      },
-      "Nekinu/1.0.0": {
+      "Engine/1.0.0": {
         "dependencies": {
           "AssimpNet": "5.0.0-beta1",
           "FileBrowser": "1.0.0",
@@ -953,7 +948,12 @@
           "System.Resources.Extensions": "6.0.0-rc.1.21451.13"
         },
         "runtime": {
-          "Nekinu.dll": {}
+          "Engine.dll": {}
+        }
+      },
+      "FileBrowser/1.0.0": {
+        "runtime": {
+          "FileBrowser.dll": {}
         }
       }
     }
@@ -1615,12 +1615,12 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "FileBrowser/1.0.0": {
+    "Engine/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Nekinu/1.0.0": {
+    "FileBrowser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

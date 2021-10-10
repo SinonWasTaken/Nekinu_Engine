@@ -7,226 +7,17 @@
     <projectFile profileName="Nekinu">Nekinu.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb5335b9-6de2-4121-a76c-cc25837a9e6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/AssimpNet.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Engine.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Engine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Engine.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Engine.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Engine.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Engine.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/ImGui.NET.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Compute.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Graphics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Input.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Mathematics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.OpenAL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Windowing.Common.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Windowing.Desktop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/OpenTK.Windowing.GraphicsLibraryFramework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Audio/Bass.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Font/font.fnt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Font/font.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Images/Icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Models/Cube.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Models/Rancour.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Models/SpriteMesh.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Models/Starmie.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Models/Starmie2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/ColliderFragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/ColliderVertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/FragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/Fresnel.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/TextFragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/TextVertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/UIFragmentShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/UIVertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/ShaderFiles/VertexShader.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Textures/Black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Textures/Rancour.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Textures/White.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/Resources/Textures/starmie_uv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/System.Drawing.Common.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/System.Resources.Extensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/ref/Engine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/linux-x64/native/libassimp.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/linux-x64/native/libcimgui.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/linux-x64/native/libglfw.so.3.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/osx-x64/native/libassimp.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/osx-x64/native/libcimgui.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/osx-x64/native/libglfw.3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win-x64/native/assimp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win-x64/native/cimgui.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win-x64/native/glfw3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win-x86/native/assimp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win-x86/native/cimgui.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win-x86/native/glfw3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0-windows/runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nekinu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nekinu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Nekinu/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Nekinu/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nekinu.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Nekinu.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nekinu.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/Nekinu.csproj.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Input/Input.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Input/Input.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Loader/ObjectLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Loader/ObjectLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Material/DiffuseMaterial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Material/Material.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Material/Material.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Project/ProjectDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Project/ProjectDetails.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Renderer/Batch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Renderer/Batch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Renderer/MasterRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Renderer/MasterRenderer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Renderer/StandardRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Renderer/StandardRenderer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Shader/Shader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Shader/Shader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Base/Window/Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Base/Window/Window.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Editor/Debug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Editor/Debug.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Editor/DockPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Editor/DockPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Editor/EditorRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Editor/EditorRenderer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Editor/ProjectInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Editor/ProjectInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Editor/backend/ImGuiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Editor/backend/ImGuiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/AssimpNet.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Data/New Scene.scene" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Data/New Scene.scene.scene" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Engine.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Engine.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Engine.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Engine.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Engine.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Engine.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/ImGui.NET.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Compute.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Graphics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Input.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Mathematics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.OpenAL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Windowing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Windowing.Desktop.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Audio/Bass.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Font/font.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Font/font.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Images/Icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Models/Cube.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Models/Rancour.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Models/SpriteMesh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Models/Starmie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Models/Starmie2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/ColliderFragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/ColliderVertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/FragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/Fresnel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/TextFragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/TextVertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/UIFragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/UIVertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/ShaderFiles/VertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Textures/Black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Textures/Rancour.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Textures/White.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Resources/Textures/starmie_uv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/System.Resources.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/imgui.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libassimp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libcimgui.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libglfw.so.3.3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libassimp.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libcimgui.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libglfw.3.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/assimp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/cimgui.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/glfw3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/assimp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/cimgui.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/glfw3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Engine.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Engine.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Engine.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Engine.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Engine.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Engine.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/ImGui.NET.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Compute.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Graphics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Input.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Mathematics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.OpenAL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Windowing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Windowing.Desktop.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/OpenTK.Windowing.GraphicsLibraryFramework.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Audio/Bass.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Font/font.fnt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Font/font.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Images/Icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Models/Cube.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Models/Rancour.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Models/SpriteMesh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Models/Starmie.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Models/Starmie2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/ColliderFragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/ColliderVertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/FragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/Fresnel.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/TextFragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/TextVertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/UIFragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/UIVertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/ShaderFiles/VertexShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Textures/Black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Textures/Rancour.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Textures/White.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/Resources/Textures/starmie_uv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/System.Resources.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/imgui.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/linux-x64/native/libcimgui.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/linux-x64/native/libglfw.so.3.3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/osx-x64/native/libcimgui.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/osx-x64/native/libglfw.3.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/win-x64/native/cimgui.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/win-x64/native/glfw3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/win-x86/native/cimgui.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/win-x86/native/glfw3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Release/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Engine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Engine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Engine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Engine.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Nekinu.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Nekinu.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Nekinu.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Nekinu.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Nekinu.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Nekinu.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Nekinu.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-    </list>
+    <list default="true" id="fb5335b9-6de2-4121-a76c-cc25837a9e6a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1y85AErw7lhWUT08M9oxcIRCBL5" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -291,6 +82,7 @@
       <workItem from="1631792182695" duration="4137000" />
       <workItem from="1631857833647" duration="12976000" />
       <workItem from="1631871448112" duration="1175000" />
+      <workItem from="1633868560082" duration="60000" />
     </task>
     <servers />
   </component>

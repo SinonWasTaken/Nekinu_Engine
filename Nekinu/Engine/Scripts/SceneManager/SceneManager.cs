@@ -6,7 +6,6 @@ using FileBrowser;
 using Nekinu.Editor;
 using Nekinu.EngineDebug;
 using Newtonsoft.Json;
-using OpenTK.Audio.OpenAL.Extensions.SOFT.DeviceClock;
 
 namespace Nekinu.SceneManage
 {
