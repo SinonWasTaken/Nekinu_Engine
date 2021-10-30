@@ -79,7 +79,7 @@ namespace Nekinu.Editor
                                 Type t = c.GetType();
 
                                 drawFields(c, t);
-
+                                drawPrivateField(c, t);
                                 //drawProperties(c, t);
 
                                 ImGui.TreePop();
@@ -231,65 +231,61 @@ namespace Nekinu.Editor
             }
         }
 
-        private void drawFields(Component c, Type t)
+        private void checkFieldType(Component c, FieldInfo info, FieldInfo[] infos)
         {
-            for (int prop = 0; prop < t.GetFields().Length; prop++)
+            try
             {
-                FieldInfo info = t.GetFields()[prop];
-
-                FieldInfo[] infos = t.GetFields();
-
                 if (info.FieldType == typeof(int))
                 {
-                    int v = (int)infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    int v = (int) infos.Single(pi => pi.Name == info.Name).GetValue(c);
                     ImGui.DragInt($"{info.Name}", ref v);
 
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, v);
                 }
                 else if (info.FieldType == typeof(string))
                 {
-                    string v = (string)infos.Single(pi => pi.Name == info.Name).GetValue(c);
-                    ImGui.LabelText($"{info.Name}", v);
+                    string v = (string) infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    ImGui.InputText("Text", ref v, (uint) v.Length);
 
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, v);
                 }
                 else if (info.FieldType == typeof(float))
                 {
-                    float v = (float)infos.Single(pi => pi.Name == info.Name).GetValue(c);
-                    ImGui.DragFloat($"{info.Name}", ref v, 0.0000001f, float.MinValue, float.MaxValue, $"{v}",ImGuiSliderFlags.NoRoundToFormat);
+                    float v = (float) infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    ImGui.DragFloat($"{info.Name}", ref v, 0.001f, float.MinValue, float.MaxValue);
 
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, v);
                 }
                 else if (info.FieldType == typeof(Vector2))
                 {
-                    Vector2 ve = (Vector2)infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    Vector2 ve = (Vector2) infos.Single(pi => pi.Name == info.Name).GetValue(c);
                     System.Numerics.Vector2 v = new System.Numerics.Vector2(ve.x, ve.y);
-                    ImGui.DragFloat2($"{info.Name}", ref v, 0.0000001f, float.MinValue, float.MaxValue, $"{v}", ImGuiSliderFlags.NoRoundToFormat);
+                    ImGui.DragFloat2($"{info.Name}", ref v, 0.001f, float.MinValue, float.MaxValue);
 
                     ve.ConvertSystemVector(v);
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, ve);
                 }
                 else if (info.FieldType == typeof(Vector3))
                 {
-                    Vector3 ve = (Vector3)infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    Vector3 ve = (Vector3) infos.Single(pi => pi.Name == info.Name).GetValue(c);
                     System.Numerics.Vector3 v = new System.Numerics.Vector3(ve.x, ve.y, ve.z);
-                    ImGui.DragFloat3($"{info.Name}", ref v, 0.0000001f, float.MinValue, float.MaxValue, $"{v}", ImGuiSliderFlags.NoRoundToFormat);
+                    ImGui.DragFloat3($"{info.Name}", ref v, 0.001f, float.MinValue, float.MaxValue);
 
-                    ve.FromSystemVector(v);
+                    ve = new Vector3(v.X, v.Y, v.Z);
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, ve);
                 }
                 else if (info.FieldType == typeof(Vector4))
                 {
-                    Vector4 ve = (Vector4)infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    Vector4 ve = (Vector4) infos.Single(pi => pi.Name == info.Name).GetValue(c);
                     System.Numerics.Vector4 v = new System.Numerics.Vector4(ve.x, ve.y, ve.z, ve.w);
-                    ImGui.DragFloat4($"{info.Name}", ref v, 0.0000001f, float.MaxValue, float.MaxValue, $"{v}", ImGuiSliderFlags.NoRoundToFormat);
+                    ImGui.DragFloat4($"{info.Name}", ref v, 0.001f, float.MaxValue, float.MaxValue);
 
                     ve.ConvertSystemVector(v);
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, ve);
                 }
                 else if (info.FieldType == typeof(Color4))
                 {
-                    Color4 ve = (Color4)infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    Color4 ve = (Color4) infos.Single(pi => pi.Name == info.Name).GetValue(c);
 
                     System.Numerics.Vector4 v = new System.Numerics.Vector4(ve.x, ve.y, ve.z, ve.w);
                     ImGui.ColorPicker4($"{info.Name}", ref v);
@@ -299,7 +295,7 @@ namespace Nekinu.Editor
                 }
                 else if (info.FieldType == typeof(bool))
                 {
-                    bool value = (bool)infos.Single(pi => pi.Name == info.Name).GetValue(c);
+                    bool value = (bool) infos.Single(pi => pi.Name == info.Name).GetValue(c);
 
                     ImGui.Checkbox($"{info.Name}", ref value);
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, value);
@@ -310,9 +306,60 @@ namespace Nekinu.Editor
                     Type type = v.GetType();
                     string[] enum_value = Enum.GetNames(type);
                     ImGui.Combo("Enum", ref selected, enum_value, enum_value.Length);
-                    
+
                     infos.Single(pi => pi.Name == info.Name).SetValue(c, v);
                 }
+            }
+            catch (Exception e)
+            {
+                EngineDebug.Debug.WriteError($"Error drawing editor field: {e}");
+            }
+        }
+        
+        private void drawFields(Component c, Type t)
+        {
+            FieldInfo[] infos = t.GetFields();
+            
+            for (int prop = 0; prop < infos.Length; prop++)
+            {
+                FieldInfo info = infos[prop];
+
+                checkFieldType(c, info, infos);
+            }
+        }
+        
+        private void drawPrivateField(Component component, Type type)
+        {
+            FieldInfo[] privateFields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+            
+            for (int i = 0; i < privateFields.Length; i++)
+            {
+                FieldInfo info = privateFields[i];
+
+                if (Attribute.IsDefined(info, typeof(SerializedPropertyAttribute)))
+                {
+                    checkFieldType(component, info, privateFields);
+                }
+            }
+
+            type = component.GetType().BaseType;
+            while (type != typeof(Component))
+            {
+                EngineDebug.Debug.WriteLine(type);
+                
+                privateFields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+                
+                for (int i = 0; i < privateFields.Length; i++)
+                {
+                    FieldInfo info = privateFields[i];
+
+                    if (Attribute.IsDefined(info, typeof(SerializedPropertyAttribute)))
+                    {
+                        checkFieldType(component, info, privateFields);
+                    }
+                }
+                
+                type = type.BaseType;
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace Nekinu
 {
-    public class Collider : Component
+    public abstract class Collider : Component
     {
         protected bool canCheckForCollision { get; set; }
 
@@ -10,8 +10,16 @@
 
         public float restitution { get; set; }
 
-        public float mass { get; set; }
+        //Check if mass is zero, if it is then invmass is zero, otherwise invmass = 1 / mass
+        
+        public float mass
+        {
+            get; 
+            set;
+        }
         public float drag { get; set; }
+
+        public Vector3 velocity { get; set; }
 
         public Collider()
         {
@@ -37,9 +45,6 @@
             canCheckForCollision = true;
         }
 
-        public virtual void doImpulseCollision(Manifold manifold)
-        {}
-
-        protected virtual Manifold checkForCollision(Entity entity) => null;
+        public abstract bool collisionCheck(Manifold m);
     }
 }

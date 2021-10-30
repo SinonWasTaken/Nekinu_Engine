@@ -4,12 +4,26 @@ namespace Nekinu
 {
     public class Mesh : Component
     {
-        [JsonProperty]
-        public string Location { get; private set; }
+        [JsonProperty] [SerializedProperty] private string location;
         
         [JsonIgnore]
         public int vertexCount { get; private set; }
 
+        [JsonIgnore]
+        public string Location
+        {
+            get => location;
+            set
+            {
+                location = value;
+                Mesh me = ObjectLoader.loadOBJ(location);
+                if (me != null)
+                {
+                    vertexCount = me.vertexCount;
+                }
+            }
+    }
+        
         public Mesh() { }
 
         [JsonConstructor]

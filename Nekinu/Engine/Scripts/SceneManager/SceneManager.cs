@@ -174,35 +174,43 @@ namespace Nekinu.SceneManage
         }
         private static void SaveSceneInfo(Scene scene)
         {
-            string path = OpenFile.saveFile("Save scene", ".scene", Directory.GetCurrentDirectory());
+            string path = OpenFile.saveFile("Save scene", ".scene", ProjectDetails.projectDeveloper);
 
-            if (File.Exists(path))
+            if (path != string.Empty)
             {
-                File.Delete(path);
-            }
-
-            List<string> lines = new List<string>();
-
-            for (int i = 0; i < scene.sceneEntities.Count; i++)
-            {
-                string s = JsonConvert.SerializeObject(scene.sceneEntities[i], Formatting.None, new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore, TypeNameHandling = TypeNameHandling.All, ConstructorHandling = ConstructorHandling.Default });
-                lines.Add(s);
-            }
-
-            try
-            {
-                StreamWriter writer = new StreamWriter(path, true, new UTF32Encoding(true, false));
-
-                foreach (string line in lines)
+                if (File.Exists(path))
                 {
-                    writer.WriteLine(line);
+                    File.Delete(path);
                 }
 
-                writer.Close();
-            }
-            catch (Exception e)
-            {
-                Debug.WriteError($"Error saving scene! {e}");
+                List<string> lines = new List<string>();
+
+                for (int i = 0; i < scene.sceneEntities.Count; i++)
+                {
+                    string s = JsonConvert.SerializeObject(scene.sceneEntities[i], Formatting.None,
+                        new JsonSerializerSettings()
+                        {
+                            ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                            TypeNameHandling = TypeNameHandling.All, ConstructorHandling = ConstructorHandling.Default
+                        });
+                    lines.Add(s);
+                }
+
+                try
+                {
+                    StreamWriter writer = new StreamWriter(path, true, new UTF32Encoding(true, false));
+
+                    foreach (string line in lines)
+                    {
+                        writer.WriteLine(line);
+                    }
+
+                    writer.Close();
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteError($"Error saving scene! {e}");
+                }
             }
         }
 

@@ -15,18 +15,13 @@ namespace Nekinu
         [JsonProperty]
         public CameraProjection cameraProjection { get; set; }
 
-        [JsonProperty]
-        public float fov;
+        [JsonProperty] [SerializedProperty] private float fov;
 
-        [JsonProperty]
-        public float near;
-        [JsonProperty]
-        public float far;
+        [JsonProperty] [SerializedProperty] private float near;
+        [JsonProperty] [SerializedProperty] private float far;
 
-        [JsonProperty]
-        public float orthoSizeX { get; set; }
-        [JsonProperty]
-        public float orthoSizeY { get; set; }
+        [JsonProperty] [SerializedProperty] private float orthoSizeX;
+        [JsonProperty] [SerializedProperty] private float orthoSizeY;
 
         [JsonIgnore]
         public Matrix4 projection { get; set; }

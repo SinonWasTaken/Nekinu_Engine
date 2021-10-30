@@ -68,7 +68,6 @@ C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Ne
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.AssemblyInfoInputs.cache
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.AssemblyInfo.cs
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.csproj.CoreCompileInputs.cache
-C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.csproj.CopyComplete
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.dll
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\ref\Nekinu_Editor.dll
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.pdb

@@ -14,6 +14,10 @@ namespace Nekinu
         public virtual void Awake() { isActive = true; }
         public virtual void Start() { }
 
+        public virtual void Editor_Awake(){ }
+        public virtual void Editor_Start(){ }
+        public virtual void Editor_Update(){ }
+        
         public virtual void Update() { }
         public virtual void LateUpdate() { }
 

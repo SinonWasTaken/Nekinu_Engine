@@ -64,8 +64,8 @@ namespace Nekinu
                 Sun sun = sunObj.GetComponent<Sun>();
 
                 Uniform3f(location_SunPosition, sunObj.transform.position);
-                Uniform3f(location_SunColor, sun.lightColor);
-                Uniform1f(location_SunIntensity, sun.intensity);
+                Uniform3f(location_SunColor, sun.LightColor);
+                Uniform1f(location_SunIntensity, sun.Intensity);
             }
         }
 
@@ -79,7 +79,7 @@ namespace Nekinu
                     {
                         AreaLight light = lights[i].GetComponent<AreaLight>();
 
-                        this.lights(location_LightPosition[i], location_LightColor[i], location_LightAttenuation[i], location_LightIntensity[i], lights[i].transform.position, light.lightColor, light.attenuation, light.intensity);
+                        this.lights(location_LightPosition[i], location_LightColor[i], location_LightAttenuation[i], location_LightIntensity[i], lights[i].transform.position, light.LightColor, light.Attenuation, light.Intensity);
                     }
                     else
                     {

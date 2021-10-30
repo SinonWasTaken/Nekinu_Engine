@@ -2,8 +2,15 @@
 {
     public class AreaLight : Light
     {
-        public Vector3 attenuation { get; set; }
+        [SerializedProperty]
+        private Vector3 attenuation;
 
+        public Vector3 Attenuation
+        {
+            get => attenuation;
+            set => attenuation = value;
+        }
+        
         public AreaLight() : base(1, Vector3.one)
         {
             attenuation = Vector3.zero;
