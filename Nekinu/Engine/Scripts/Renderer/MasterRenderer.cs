@@ -1,5 +1,4 @@
-﻿using Nekinu.Editor;
-using Nekinu.SceneManage;
+﻿using Nekinu.SceneManage;
 using OpenTK.Graphics.ES30;
 using OpenTK.Mathematics;
 using System.Collections.Generic;

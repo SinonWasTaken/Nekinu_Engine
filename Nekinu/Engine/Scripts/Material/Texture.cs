@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Nekinu.SystemCache;
+using Newtonsoft.Json;
 
 namespace Nekinu
 {

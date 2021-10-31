@@ -1,8 +1,7 @@
-﻿namespace Nekinu.Editor
+﻿namespace Nekinu_Editor.Editor
 {
-    public abstract class Editor
+    public class Editor
     {
-        public abstract void Init();
-        public abstract void Render();
+        public virtual void On_Editor_Render() { }
     }
 }

@@ -4,7 +4,7 @@ namespace Nekinu.Editor
 {
     internal class EditorRenderer
     {
-        private static List<Editor> editor_panels;
+        private static List<IEditorPanel> editor_panels;
 
         private static ImGuiController controller;
 
@@ -16,7 +16,7 @@ namespace Nekinu.Editor
 
             EditorList.Init();
 
-            editor_panels = new List<Editor>();
+            editor_panels = new List<IEditorPanel>();
 
             controller = new ImGuiController(Window.w_width, Window.w_height, wind);
 
@@ -55,13 +55,13 @@ namespace Nekinu.Editor
             controller.Dispose();
         }
 
-        public static void addEditor(Editor editor)
+        public static void addEditor(IEditorPanel editor)
         {
             editor.Init();
             editor_panels.Add(editor);
         }
 
-        public static bool hasEditor(Editor editor)
+        public static bool hasEditor(IEditorPanel editor)
         {
             for (int i = 0; i < editor_panels.Count; i++)
             {
@@ -74,7 +74,7 @@ namespace Nekinu.Editor
             return false;
         }
 
-        public static void removeEditor(Editor editor)
+        public static void removeEditor(IEditorPanel editor)
         {
             editor_panels.Remove(editor);
         }

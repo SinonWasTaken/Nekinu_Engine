@@ -5,7 +5,7 @@ using Nekinu.EngineDebug;
 namespace Nekinu.Editor
 {
     [EditorType("Debug")]
-    public class Debug : Editor
+    public class Debug : IEditorPanel
     {
         public override void Init() {}
 

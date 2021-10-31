@@ -10,35 +10,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb5335b9-6de2-4121-a76c-cc25837a9e6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Nekinu_Editor/.idea/.idea.Nekinu_Editor.dir/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Nekinu_Editor/UserCustomEditor/LoadedUserEditors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/bin/Debug/net6.0-windows7.0/FileBrowser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/bin/Debug/net6.0-windows7.0/FileBrowser.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/bin/Debug/net6.0-windows7.0/FileBrowser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/bin/Debug/net6.0-windows7.0/FileBrowser.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/App.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/MainWindow.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/OpenFile.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/OpenFile.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/IEditorPanel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.CopyComplete" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/ContentBrowser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/ContentBrowser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Debug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Debug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/DockPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/DockPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Editor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Editor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/EditorRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/EditorRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/ProjectInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/ProjectInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/PropertiesPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/PropertiesPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/SceneHeirarchyPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/SceneHeirarchyPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/ScenePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/ScenePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Statistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Window/EditorWindowUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/Window/EditorWindowUpdater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/Editor/backend/EditorList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/Editor/backend/EditorList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Engine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Engine.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Engine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Engine.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/FileBrowser.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/FileBrowser.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/FileBrowser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/FileBrowser.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Nekinu_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Nekinu_Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Nekinu_Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/Nekinu_Editor.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/imgui.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/ref/Nekinu_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/bin/Debug/net6.0-windows7.0/ref/Nekinu_Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/Nekinu_Editor.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/ref/Nekinu_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu_Editor/obj/Debug/net6.0-windows7.0/ref/Nekinu_Editor.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +54,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6d27f961f364195b186a151c83dd18fa20070/51/RuntimeType.ActivatorCache.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d84cd47e2c64c8c97f04231b42c29e34a800/e0/6e89ea28/Matrix4.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f6d27f961f364195b186a151c83dd18fa20070/47A/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c4c466bf085d458098e34ca2a0a3cc46b600/be/4715c51f/GameWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d84cd47e2c64c8c97f04231b42c29e34a800/5e/0c62ea2a/Vector4.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1y85AErw7lhWUT08M9oxcIRCBL5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -70,7 +70,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34993446" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -166,6 +166,8 @@
       <workItem from="1634193560917" duration="65000" />
       <workItem from="1634636590382" duration="1499000" />
       <workItem from="1635553038890" duration="10465000" />
+      <workItem from="1635585615365" duration="6351000" />
+      <workItem from="1635643676340" duration="10762000" />
     </task>
     <servers />
   </component>

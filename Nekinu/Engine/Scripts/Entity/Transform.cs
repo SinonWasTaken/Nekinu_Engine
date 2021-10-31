@@ -1,5 +1,4 @@
-﻿using Nekinu.Editor;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using OpenTK;
 
@@ -17,12 +16,24 @@ namespace Nekinu
 
         [JsonProperty]
         public Vector3 position { get; set; }
+
         [JsonProperty]
-        public Vector3 rotation { get; set; }
+        private Vector3 rot;
+        
+        [JsonIgnore]
+        public Vector3 rotation
+        {
+            get => rot;
+            set
+            {
+                rot = value;
+                qRotation = Quaternion.FromEulerAngles(rot);
+            }
+        }
         [JsonProperty]
         public Vector3 scale { get; set; }
 
-        private Quaternion qRotation;
+        public Quaternion qRotation;
 
         public Transform()
         {

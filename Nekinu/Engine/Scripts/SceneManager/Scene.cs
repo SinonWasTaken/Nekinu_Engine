@@ -1,6 +1,4 @@
-﻿using Nekinu.Editor;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Nekinu.SceneManage
 {
@@ -32,6 +30,7 @@ namespace Nekinu.SceneManage
         {
             SceneManager.loaded += OnLoad;
             SceneManager.update += Update;
+            SceneManager.editor_update += Editor_Update;
             SceneManager.unLoaded += OnUnload;
         }
 
@@ -39,6 +38,7 @@ namespace Nekinu.SceneManage
         {
             SceneManager.loaded -= OnLoad;
             SceneManager.update -= Update;
+            SceneManager.editor_update -= Editor_Update;
             SceneManager.unLoaded -= OnUnload;
         }
 
@@ -47,9 +47,20 @@ namespace Nekinu.SceneManage
             for (int i = 0; i < sceneEntities.Count; i++)
             {
                 Entity entity = sceneEntities[i];
-
+                
                 entity.Awake();
                 entity.Start();
+            }
+        }
+
+        public void OnEditorLoad()
+        {
+            for (int i = 0; i < sceneEntities.Count; i++)
+            {
+                Entity entity = sceneEntities[i];
+                
+                entity.Editor_Awake();
+                entity.Editor_Start();
             }
         }
 
@@ -86,6 +97,17 @@ namespace Nekinu.SceneManage
         {
             changeName(entity);
             sceneEntities.Add(entity);
+
+            if (SceneManager.state == SceneState.Editor)
+            {
+                entity.Editor_Awake();
+                entity.Editor_Start();
+            }
+            else if(SceneManager.state == SceneState.Playing)
+            {
+                entity.Awake();
+                entity.Start();
+            }
         }
 
         public void RemoveEntity(Entity entity)
@@ -109,7 +131,7 @@ namespace Nekinu.SceneManage
             return null;
         }
 
-        public virtual void Update()
+        public void Update()
         {
             for (int i = 0; i < sceneEntities.Count; i++)
             {
@@ -118,5 +140,14 @@ namespace Nekinu.SceneManage
                     entity.Update();
             }
         }
+
+        public void Editor_Update()
+        {
+            for (int i = 0; i < sceneEntities.Count; i++)
+            {
+                if(sceneEntities[i].isActive)
+                    sceneEntities[i].Editor_Update();
+            }
+        } 
     }
 }

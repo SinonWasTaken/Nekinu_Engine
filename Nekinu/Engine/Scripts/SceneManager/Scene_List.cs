@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Nekinu.Editor;
 using Nekinu.EngineDebug;
 
 namespace Nekinu.SceneManage

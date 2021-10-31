@@ -5,7 +5,7 @@ using Nekinu.Render;
 namespace Nekinu
 {
     [EditorType("Scene")]
-    public class ScenePanel : Editor.Editor
+    public class ScenePanel : Editor.IEditorPanel
     {
         public Texture texture;
 

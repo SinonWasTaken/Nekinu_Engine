@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using ImGuiNET;
+using Nekinu.SystemCache;
 using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace Nekinu.Editor
 {
-    public class ContentBrowser : Editor
+    public class ContentBrowser : IEditorPanel
     {
         private List<directory_info> directory_info;
 

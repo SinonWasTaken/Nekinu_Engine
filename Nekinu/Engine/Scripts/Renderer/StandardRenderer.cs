@@ -1,9 +1,8 @@
-﻿using Nekinu.MeshLoader.VAO;
-using OpenTK.Graphics.ES30;
+﻿using OpenTK.Graphics.ES30;
 using System;
 using System.Collections.Generic;
-using Nekinu.Editor;
-using Nekinu.Shaders;
+using Nekinu.EngineDebug;
+using Nekinu.SystemCache;
 
 namespace Nekinu.Render
 {
@@ -39,12 +38,11 @@ namespace Nekinu.Render
             {
                 Mesh mesh = batch.mesh;
 
-                VAO vao = Cache.VAOExists(mesh.Location);
+                shader.Bind();
 
-                if (vao != null)
+                if (mesh.VaoInitialized)
                 {
-                    shader.Bind();
-                    bindModel(vao);
+                    bindModel(mesh);
 
                     draw_calls++;
 
@@ -54,14 +52,15 @@ namespace Nekinu.Render
                         shader.LoadCameraView(camera.View);
                         shader.LoadCameraProjection(camera.projection);
 
-                        GL.DrawElements(PrimitiveType.Triangles, mesh.vertexCount, DrawElementsType.UnsignedInt, IntPtr.Zero);
+                        GL.DrawElements(PrimitiveType.Triangles, mesh.VertexCount, DrawElementsType.UnsignedInt,
+                            IntPtr.Zero);
 
-                        vertex_count += mesh.vertexCount;
+                        vertex_count += mesh.VertexCount;
 
-                        unBindTexture();
+                        //unBindTexture();
                     }
 
-                    unBindModel(vao);
+                    unBindModel(mesh);
                     shader.UnBind();
                 }
             }
@@ -102,11 +101,13 @@ namespace Nekinu.Render
             return lights;
         }
 
-        private void bindModel(VAO mesh)
+        private void bindModel(Mesh mesh)
         {
-            GL.BindVertexArray(mesh.vao);
+            Debug.WriteLine(mesh.VAOID + " " + mesh.VBOS.Count);
+            
+            GL.BindVertexArray(mesh.VAOID);
 
-            for (int i = 0; i < mesh.vbos.Count; i++)
+            for (int i = 0; i < mesh.VBOS.Count; i++)
             {
                 GL.EnableVertexAttribArray(i);
             }
@@ -117,9 +118,9 @@ namespace Nekinu.Render
             GL.BindTexture(TextureTarget.Texture2D, 0);
         }
 
-        private void unBindModel(VAO vao)
+        private void unBindModel(Mesh mesh)
         {
-            for (int i = 0; i < vao.vbos.Count; i++)
+            for (int i = 0; i < mesh.VBOS.Count; i++)
             {
                 GL.DisableVertexAttribArray(i);
             }

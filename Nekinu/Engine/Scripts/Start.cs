@@ -1,8 +1,4 @@
-﻿using System;
-using Nekinu.Editor;
-using Nekinu.Render;
-
-namespace Nekinu
+﻿namespace Nekinu
 {
     public class Start
     {

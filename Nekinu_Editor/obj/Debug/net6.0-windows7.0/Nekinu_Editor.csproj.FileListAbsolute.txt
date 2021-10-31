@@ -72,3 +72,4 @@ C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Ne
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\ref\Nekinu_Editor.dll
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.pdb
 C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.genruntimeconfig.cache
+C:\Users\Seth\Desktop\Nekinu_Engine\Nekinu_Editor\obj\Debug\net6.0-windows7.0\Nekinu_Editor.csproj.CopyComplete

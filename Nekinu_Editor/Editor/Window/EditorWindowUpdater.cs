@@ -10,11 +10,16 @@ namespace Nekinu.Editor
         public void OnInit(Window window = null)
         {
             new SceneManager();
+            SceneManager.state = SceneState.Editor;
+            
             new MasterRenderer(new StandardRenderer());
             EditorRenderer.Init(window);
         }
 
-        public void OnUpdate() { }
+        public void OnUpdate()
+        {
+            SceneManager.Update();
+        }
 
         public void OnRender()
         {

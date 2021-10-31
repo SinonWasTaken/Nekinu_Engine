@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Nekinu.Editor;
 using Nekinu.SceneManage;
 using Newtonsoft.Json;
 using OpenTK.Mathematics;
@@ -60,7 +59,6 @@ namespace Nekinu
                 entity.Start();
             }
         }
-
         public void RemoveChild(Entity entity)
         {
             children.Remove(entity);
@@ -82,7 +80,6 @@ namespace Nekinu
                     children[i].Awake();
             }
         }
-
         public void Start()
         {
             for (int c = 0; c < components.Count; c++)
@@ -99,7 +96,6 @@ namespace Nekinu
                     children[i].Start();
             }
         }
-
         public void Update()
         {
             UpdateTransformationMatrix();
@@ -116,6 +112,55 @@ namespace Nekinu
 
                 if(component.isActive)
                     component.Update();
+            }
+        }
+        
+        public void Editor_Awake()
+        {
+            for (int c = 0; c < components.Count; c++)
+            {
+                Component component = components[c];
+
+                if (component.isActive)
+                    component.Editor_Awake();
+            }
+
+            for (int i = 0; i < children.Count; i++)
+            {
+                if (children[i].isActive)
+                    children[i].Editor_Awake();
+            }
+        }
+        public void Editor_Start()
+        {
+            for (int c = 0; c < components.Count; c++)
+            {
+                Component component = components[c];
+
+                if (component.isActive)
+                    component.Editor_Start();
+            }
+
+            for (int i = 0; i < children.Count; i++)
+            {
+                if (children[i].isActive)
+                    children[i].Editor_Start();
+            }
+        }
+        public void Editor_Update()
+        {
+            UpdateTransformationMatrix();
+            
+            for (int i = 0; i < children.Count; i++)
+            {
+                if(children[i].isActive)
+                    children[i].Editor_Update();
+            }
+
+            for (int i = 0; i < components.Count; i++)
+            {
+                if(components[i].isActive)
+                    components[i].Editor_Update();
             }
         }
 
@@ -165,8 +210,7 @@ namespace Nekinu
 
             return null;
         }
-
-        [UpdateInEditor]
+        
         public void UpdateTransformationMatrix()
         {
             internal_transform = Matrix4x4.entityTransformationMatrix(parent, transform);

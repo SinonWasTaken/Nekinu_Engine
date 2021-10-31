@@ -3,13 +3,13 @@ using OpenTK.Graphics.ES30;
 using OpenTK.Mathematics;
 using System.IO;
 using System.Collections.Generic;
-using Nekinu.Editor;
+using Nekinu.SystemCache;
 
 namespace Nekinu.Shaders
 {
     public abstract class Shader
     {
-        protected static int programID { get; private set; }
+        public int programID { get; private set; }
 
         private int vertexID, geometryID, fragmentID;
 
@@ -42,7 +42,7 @@ namespace Nekinu.Shaders
 
             GetAllUniformLocations();
 
-            Cache.Loaded_Shaders.Add(this);
+            Cache.AddShaderProgram(this);
         }
 
         public Shader(string vertexShader, string geometryShader, string fragmentShader)
@@ -78,7 +78,7 @@ namespace Nekinu.Shaders
 
             GetAllUniformLocations();
 
-            Cache.Loaded_Shaders.Add(this);
+            Cache.AddShaderProgram(this);
         }
 
         public abstract void doShaderLoad(Entity self, List<Entity> scene_entities);

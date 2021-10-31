@@ -4,7 +4,7 @@ using Nekinu.SceneManage;
 namespace Nekinu.Editor
 {
     [EditorType("Scene")]
-    public class SceneHeirarchyPanel : Editor
+    public class SceneHeirarchyPanel : IEditorPanel
     {
         public static SceneHeirarchyPanel Instance;
 

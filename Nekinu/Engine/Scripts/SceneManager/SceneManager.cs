@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using FileBrowser;
-using Nekinu.Editor;
 using Nekinu.EngineDebug;
+using Nekinu.SystemCache;
 using Newtonsoft.Json;
 
 namespace Nekinu.SceneManage
@@ -17,6 +17,7 @@ namespace Nekinu.SceneManage
 
         public static event OnSceneLoaded loaded;
         public static event OnSceneUpdate update;
+        public static event OnSceneUpdate editor_update;
         public static event OnSceneUnloaded unLoaded;
 
         public static Scene loadedScene { get; private set; }
@@ -35,11 +36,7 @@ namespace Nekinu.SceneManage
 
             Scene_List.Init();
 
-#if RELEASE
-            LoadSceneInfo($@".\Data\New Scene.scene");
-            state = SceneState.Playing;
-            loaded();
-#endif
+            //Create a system that stores all scenes that are to be used in the game, and then load the first one in the system
         }
 
         public static string renameScene(Scene scene)
@@ -58,26 +55,6 @@ namespace Nekinu.SceneManage
             return count == 0 ? scene.scene_name : $"{scene.scene_name}-{count}";
         }
 
-        public static void LoadScene(int id)
-        {
-            if (id >= Scene_List.list.Count)
-            {
-                Debug.WriteError("Couldn't load desired scene! Id was out of range!");
-                return;
-            }
-            LoadScene(Scene_List.list[id]);
-        }
-
-        public static void LoadScene(string name)
-        {
-            for (int i = 0; i < Scene_List.list.Count; i++)
-            {
-                if (Scene_List.list[i].scene_name == name)
-                    LoadScene(Scene_List.list[i]);
-                return;
-            }
-        }
-
         public static void LoadScene(Scene scene)
         {
             if (loadedScene != null)
@@ -85,18 +62,38 @@ namespace Nekinu.SceneManage
                 unLoaded();
             }
 
+            Cache.On_NewScene_Loaded();
+            
             loadedScene = scene;
-
+            
             loadedScene.SubscribeEvent();
+
+            if (state == SceneState.Editor)
+            {
+                loadedScene.OnEditorLoad();
+            }
+            else if(state == SceneState.Playing)
+            {
+                loadedScene.OnLoad();
+            }
         }
 
         public static void Update()
         {
             if (state == SceneState.Playing)
+            {
                 if (loadedScene != null)
                 {
                     update();
                 }
+            }
+            else if (state == SceneState.Editor)
+            {
+                if (loadedScene != null)
+                {
+                    editor_update();
+                }
+            }
         }
 
         public static void BeingPlay()
@@ -108,7 +105,7 @@ namespace Nekinu.SceneManage
 
         public static void EndPlay()
         {
-            state = SceneState.Ready;
+            state = SceneState.Editor;
 
             LoadTempSceneInfo();
         }
@@ -140,7 +137,6 @@ namespace Nekinu.SceneManage
         {
             if (temp_scene_info.Count != 0)
             {
-                Cache.ClearMesh();
                 Scene scene = new Scene(loadedScene.scene_name);
 
                 foreach (string line in temp_scene_info)
@@ -233,49 +229,9 @@ namespace Nekinu.SceneManage
                 }
             }
         }
-        
-        public static void LoadSceneInfo(string name)
-        {
-            StreamReader reader = null;
-
-            if (name.Contains(".scene"))
-            {
-                string[] lines = name.Split("\\");
-
-                string n = lines[lines.Length - 1];
-
-                try
-                {
-                    reader = new StreamReader($@".\Data\{n}", new UTF32Encoding(true, false));
-                    LoadSceneDetail(reader, n);
-                }
-                catch (Exception e)
-                {
-                    Crash_Report.generate_crash_report($"Error loading scene! {e}");
-                    Debug.WriteError($"Error loading scene! {e}");
-                    NewScene();
-                }
-            }
-            else
-            {
-                try
-                {
-                    reader = new StreamReader($@".\Data\{name}.scene", new UTF32Encoding(true, false));
-                    LoadSceneDetail(reader, name);
-                }
-                catch (Exception e)
-                {
-                    Crash_Report.generate_crash_report($"Error loading scene! {e}");
-                    Debug.WriteError($"Error loading scene! {e}");
-                    NewScene();
-                }
-            }
-        }
 
         private static void LoadSceneDetail(StreamReader reader, string name)
         {
-            Cache.ClearMesh();
-
             string line = "";
 
             Scene scene = new Scene(name.Replace(".scene", ""));

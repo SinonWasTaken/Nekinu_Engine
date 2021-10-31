@@ -8,9 +8,9 @@ using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace Nekinu.Editor
 {
-    internal class DockPanel : Editor
+    internal class DockPanel : IEditorPanel
     {
-        private Dictionary<string, List<Editor>> editor_tabs;
+        private Dictionary<string, List<IEditorPanel>> editor_tabs;
 
         public static bool isPlaying = false;
 
@@ -18,7 +18,7 @@ namespace Nekinu.Editor
 
         public override void Init() 
         {
-            editor_tabs = new Dictionary<string, List<Editor>>();
+            editor_tabs = new Dictionary<string, List<IEditorPanel>>();
             sortEditors();
 
             window_flags = ImGuiWindowFlags.MenuBar | ImGuiWindowFlags.NoDocking;
@@ -110,7 +110,11 @@ namespace Nekinu.Editor
                     if (ImGui.MenuItem("Cube"))
                     {
                         Entity entity = new Entity(new Transform("Entity"));
-                        entity.AddComponent(new Mesh($@"./Resources/Models/Cube.txt"));
+                        
+                        Mesh mesh = new Mesh();
+                        mesh.Location = $@"./Resources/Models/Cube.txt";
+                        
+                        entity.AddComponent(mesh);
 
                         if (SceneHeirarchyPanel.Instance.selectedEntity != null)
                         {
@@ -128,7 +132,7 @@ namespace Nekinu.Editor
                 {
                     foreach (string key in editor_tabs.Keys)
                     {
-                        List<Editor> tab = editor_tabs.GetValueOrDefault(key);
+                        List<IEditorPanel> tab = editor_tabs.GetValueOrDefault(key);
 
                         if (ImGui.TreeNodeEx(key))
                         {
@@ -165,7 +169,7 @@ namespace Nekinu.Editor
 
             if(Input.isKeyDown(Keys.LeftControl) && Input.isKeyPressed(Keys.S))
             {
-                if (!isPlaying)
+                if (SceneManager.state != SceneState.Playing)
                     SceneManager.Save();
                 else
                     EngineDebug.Debug.WriteLine("Cannot save while game is running");
@@ -184,11 +188,11 @@ namespace Nekinu.Editor
                 {
                     string typeString = type.editorType;
 
-                    List<Editor> tab = editor_tabs.GetValueOrDefault(typeString);
+                    List<IEditorPanel> tab = editor_tabs.GetValueOrDefault(typeString);
 
                     if (tab == null)
                     {
-                        List<Editor> newTab = new List<Editor>();
+                        List<IEditorPanel> newTab = new List<IEditorPanel>();
                         newTab.Add(EditorList.allEditors[i]);
                         editor_tabs.Add(typeString, newTab);
                     }
@@ -199,11 +203,11 @@ namespace Nekinu.Editor
                 }
                 else
                 {
-                    List<Editor> tab = editor_tabs.GetValueOrDefault("None");
+                    List<IEditorPanel> tab = editor_tabs.GetValueOrDefault("None");
 
                     if (tab == null)
                     {
-                        List<Editor> newTab = new List<Editor>();
+                        List<IEditorPanel> newTab = new List<IEditorPanel>();
                         newTab.Add(EditorList.allEditors[i]);
                         editor_tabs.Add("None", newTab);
                     }

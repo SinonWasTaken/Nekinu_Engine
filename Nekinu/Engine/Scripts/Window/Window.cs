@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Nekinu.Render;
+using Nekinu.SystemCache;
 using Nekinu.WindowUpdater;
 using OpenTK.Graphics.ES20;
 using OpenTK.Windowing.Common;

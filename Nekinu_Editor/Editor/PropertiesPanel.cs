@@ -3,11 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using OpenTK.Graphics.ES11;
 
 namespace Nekinu.Editor
 {
     [EditorType("Other")]
-    public class PropertiesPanel : Editor
+    public class PropertiesPanel : IEditorPanel
     {
         private int selected;
         private bool buttonSelected;
@@ -56,7 +57,7 @@ namespace Nekinu.Editor
                         v = new System.Numerics.Vector3(entity.transform.rotation.x, entity.transform.rotation.y, entity.transform.rotation.z);
                         ImGui.DragFloat3("Rotation", ref v);
 
-                        entity.transform.rotation.FromSystemVector(v);
+                        entity.transform.rotation = new Vector3(v.X, v.Y, v.Z);
 
                         v = new System.Numerics.Vector3(entity.transform.scale.x, entity.transform.scale.y, entity.transform.scale.z);
                         ImGui.DragFloat3("Scale", ref v);
@@ -73,13 +74,12 @@ namespace Nekinu.Editor
                             Component c = entity.components[i];
 
                             string[] lines = c.GetType().ToString().Split(".");
-
+                            
                             if (ImGui.TreeNodeEx(lines[lines.Length - 1], flags))
                             {
                                 Type t = c.GetType();
-
+                                
                                 drawFields(c, t);
-                                drawPrivateField(c, t);
                                 //drawProperties(c, t);
 
                                 ImGui.TreePop();
@@ -315,47 +315,35 @@ namespace Nekinu.Editor
                 EngineDebug.Debug.WriteError($"Error drawing editor field: {e}");
             }
         }
-        
-        private void drawFields(Component c, Type t)
-        {
-            FieldInfo[] infos = t.GetFields();
-            
-            for (int prop = 0; prop < infos.Length; prop++)
-            {
-                FieldInfo info = infos[prop];
 
-                checkFieldType(c, info, infos);
-            }
-        }
-        
-        private void drawPrivateField(Component component, Type type)
+        private void drawFields(Component component, Type type)
         {
-            FieldInfo[] privateFields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+            FieldInfo[] fields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
             
-            for (int i = 0; i < privateFields.Length; i++)
+            Array.Sort(fields, (x, y) => String.Compare(x.Name, y.Name));
+            
+            for (int i = 0; i < fields.Length; i++)
             {
-                FieldInfo info = privateFields[i];
+                FieldInfo info = fields[i];
 
-                if (Attribute.IsDefined(info, typeof(SerializedPropertyAttribute)))
+                if (Attribute.IsDefined(info, typeof(SerializedPropertyAttribute)) || info.IsPublic)
                 {
-                    checkFieldType(component, info, privateFields);
+                    checkFieldType(component, info, fields);
                 }
             }
 
             type = component.GetType().BaseType;
             while (type != typeof(Component))
             {
-                EngineDebug.Debug.WriteLine(type);
+                fields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
                 
-                privateFields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
-                
-                for (int i = 0; i < privateFields.Length; i++)
+                for (int i = 0; i < fields.Length; i++)
                 {
-                    FieldInfo info = privateFields[i];
+                    FieldInfo info = fields[i];
 
                     if (Attribute.IsDefined(info, typeof(SerializedPropertyAttribute)))
                     {
-                        checkFieldType(component, info, privateFields);
+                        checkFieldType(component, info, fields);
                     }
                 }
                 

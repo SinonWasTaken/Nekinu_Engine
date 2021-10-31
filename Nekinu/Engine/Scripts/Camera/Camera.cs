@@ -1,5 +1,4 @@
-﻿using Nekinu.Editor;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using OpenTK.Mathematics;
 using System;
 
@@ -90,7 +89,7 @@ namespace Nekinu
             }
         }
 
-        [JsonIgnore][UpdateInEditor]
+        [JsonIgnore]
         public Matrix4 View
         {
             get

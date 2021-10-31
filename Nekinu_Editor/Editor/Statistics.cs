@@ -4,7 +4,7 @@ using Nekinu.Render;
 namespace Nekinu.Editor
 {
     [EditorType("Editor")]
-    public class Statistics : Editor
+    public class Statistics : IEditorPanel
     {
         public override void Init(){ }
 

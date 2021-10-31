@@ -2,7 +2,7 @@
 
 namespace Nekinu.Editor
 {
-    public class ProjectInfo : Editor
+    public class ProjectInfo : IEditorPanel
     {
         private string project_name;
         private string project_developer;

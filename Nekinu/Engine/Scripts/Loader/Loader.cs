@@ -3,7 +3,7 @@ using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 using Nekinu.EngineDebug;
-using Nekinu.MeshLoader.VAO;
+using Nekinu.SystemCache;
 using OpenTK.Graphics.ES30;
 
 namespace Nekinu
@@ -12,72 +12,12 @@ namespace Nekinu
     {
         public static Mesh loadModel(string location, float[] pos, float[] text, float[] normal, int[] indicies)
         {
-            VAO vao = new VAO(location);
-            vao.createVAO();
-            GL.BindVertexArray(vao.vao);
-            vao.bindIndiciesBuffer(indicies);
-            vao.storeData(0, 3, pos);
-            vao.storeData(1, 2, text);
-            vao.storeData(2, 3, normal);
-            GL.BindVertexArray(0);
-            return new Mesh(location, indicies.Length);
-        }
-
-        public static Mesh loadModel(string location, float[] pos, float[] text, int[] indicies)
-        {
-            VAO vao = new VAO(location);
-            vao.createVAO();
-            GL.BindVertexArray(vao.vao);
-            vao.bindIndiciesBuffer(indicies);
-            vao.storeData(0, 3, pos);
-            vao.storeData(1, 2, text);
-            GL.BindVertexArray(0);
-            return new Mesh(location, indicies.Length);
-        }
-
-        public static Mesh loadModel(string location, float[] pos, float[] text)
-        {
-            VAO vao = new VAO(location);
-            vao.createVAO();
-            GL.BindVertexArray(vao.vao);
-
-            vao.storeData(0, 3, pos);
-            vao.storeData(1, 2, text);
-
-            GL.BindVertexArray(0);
-            return new Mesh(location, pos.Length / 3);
-        }
-
-        public static Mesh loadModel(string location, float[] pos)
-        {
-            VAO vao = new VAO(location);
-            vao.createVAO();
-            GL.BindVertexArray(vao.vao);
-            vao.storeData(0, 3, pos);
-            GL.BindVertexArray(0);
-            return new Mesh(location, vao.vao);
-        }
-
-        public static Mesh loadModel(string location, Vector3[] pos)
-        {
-            VAO vao = new VAO(location);
-            vao.createVAO();
-            GL.BindVertexArray(vao.vao);
-
-            float[] position = new float[pos.Length * 3];
-
-            int index = 0;
-
-            for (int i = 0; i < pos.Length; i++)
-            {
-                position[index++] = pos[i].x;
-                position[index++] = pos[i].y;
-                position[index++] = pos[i].z;
-            }
-
-            vao.storeData(0, 3, position);
-            GL.BindVertexArray(0);
-            return new Mesh(location, position.Length / 3);
+            Mesh mesh = new Mesh();
+            
+            mesh.VertexCount = indicies.Length;
+            mesh.create_new_vao(location, indicies, pos, text, normal);
+            
+            return mesh;
         }
 
         //https://stackoverflow.com/questions/11645368/opengl-c-sharp-opentk-load-and-draw-image-functions-not-working
