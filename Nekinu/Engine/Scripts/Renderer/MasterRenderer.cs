@@ -3,6 +3,7 @@ using OpenTK.Graphics.ES30;
 using OpenTK.Mathematics;
 using System.Collections.Generic;
 using Nekinu.EngineDebug;
+using Nekinu.Shaders;
 
 namespace Nekinu.Render
 {
@@ -16,6 +17,8 @@ namespace Nekinu.Render
 
         public MasterRenderer(params IRenderer[] renderers)
         {
+            new TestShader("/Resources/ShaderFiles/VertexShader.txt", "/Resources/ShaderFiles/FragmentShader.txt");
+
             Batch.InitBatch();
 
             foreach (IRenderer renderer in renderers)

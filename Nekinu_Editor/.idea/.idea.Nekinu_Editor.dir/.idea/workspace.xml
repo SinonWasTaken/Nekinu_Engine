@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303656a5-1866-44b1-a986-11a70444ecd1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu/.idea/.idea.Nekinu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/.idea/.idea.Nekinu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/Debug/net6.0-windows7.0/Nekinu.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/Debug/net6.0-windows7.0/Nekinu.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net6.0-windows7.0/FileBrowser.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/FileBrowser.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/FileBrowser.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/FileBrowser.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/FileBrowser.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu/.vs/Nekinu/v17/.futdcache.v1" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/.vs/Nekinu/v17/.futdcache.v1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu/.vs/Nekinu/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/.vs/Nekinu/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/Debug/net6.0-windows7.0/Nekinu.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/Debug/net6.0-windows7.0/Nekinu.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/Nekinu.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/Nekinu.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/Nekinu.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/Nekinu.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Nekinu/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Nekinu/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0-windows7.0/Nekinu_Editor.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0-windows7.0/Nekinu_Editor.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0-windows7.0/Nekinu_Editor.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Nekinu_Editor.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Nekinu_Editor.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Nekinu_Editor.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Nekinu_Editor.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Nekinu_Editor" type="DotNetProject" factoryName=".NET Project">
@@ -63,10 +75,15 @@
       <option name="presentableId" value="Default" />
       <updated>1634635828699</updated>
       <workItem from="1634635863507" duration="38000" />
+      <workItem from="1637393396637" duration="487000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

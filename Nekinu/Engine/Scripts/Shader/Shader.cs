@@ -4,6 +4,7 @@ using OpenTK.Mathematics;
 using System.IO;
 using System.Collections.Generic;
 using Nekinu.SystemCache;
+using Nekinu.EngineDebug;
 
 namespace Nekinu.Shaders
 {
@@ -114,6 +115,8 @@ namespace Nekinu.Shaders
             {
                 int shaderID = GL.CreateShader(type);
 
+                Debug.WriteLine(o);
+
                 GL.ShaderSource(shaderID, o);
 
                 GL.CompileShader(shaderID);
@@ -191,16 +194,44 @@ namespace Nekinu.Shaders
             GL.Uniform1(location, value == true ? 1 : 0);
         }
 
+        private void check_if_shadeR_requires_file(string shader)
+        {
+            string[] lines = shader.Split("\n");
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                if(lines[i].Contains("#INCLUDE "))
+                {
+                    string include = lines[i].Replace("#INCLUDE ", "");
+
+                    try
+                    {
+                        StreamReader reader = new StreamReader(@"/Resources/ShaderFiles/" + include);
+
+                        
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.WriteLine(e);
+                        Crash_Report.generate_crash_report($"Error! {e}");
+                    }
+                }
+            }
+        }
+
+        private void get_included_shaderfile(string file_to_include)
+        {
+
+        }
+
         public void Bind()
         {
             GL.UseProgram(programID);
         }
-
         public void UnBind()
         {
             GL.UseProgram(0);
         }
-
         public void CleanUp()
         {
             GL.DetachShader(programID, vertexID);
